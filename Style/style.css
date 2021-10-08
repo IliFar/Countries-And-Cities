@@ -1,0 +1,193 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #5377a0;
+}
+
+body #container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+body #container #country-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50px;
+  margin: 20px;
+  color: white;
+}
+
+body #container #country-group select {
+  width: 100%;
+  background-color: #3a5370;
+  color: white;
+  border-radius: 50px;
+}
+
+body #container #country-group select option {
+  color: white;
+}
+
+body #container #city-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #3a5370;
+  margin: 20px;
+}
+
+body #container #city-group p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+body #container #city-group #cities-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body #container #city-group #cities-div button {
+  background-color: #5377a0;
+  border-radius: 20px;
+  color: white;
+  width: 100%;
+  height: 50px;
+  margin: 10px;
+  font-size: 30px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+body #container #city-group #cities-div button:focus {
+  background-color: burlywood;
+}
+
+body #container #city-group #visited-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body #container #city-group #visited-button button {
+  background-color: #5377a0;
+  color: white;
+  width: 100%;
+  height: 50px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+body #container #city-group #city-facts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+body #visited-cities {
+  color: white;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #3a5370;
+}
+
+body #visited-cities button {
+  background-color: #5377a0;
+  color: white;
+}
+
+body #visited-cities span {
+  font-size: 20px;
+}
+
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+body #city-saved .fade-out {
+  opacity: 0;
+  -webkit-animation: fadeout 1s linear;
+          animation: fadeout 1s linear;
+  color: white;
+  font-size: 50px !important;
+}
+/*# sourceMappingURL=style.css.map */

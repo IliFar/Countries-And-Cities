@@ -1,0 +1,120 @@
+$selectBackgroundColor: rgb(58, 83, 112);
+$buttonBAckgroundColor: rgb(83, 119, 160);
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(83, 119, 160);
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    #country-group {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      margin: 20px;
+      color: white;
+      select {
+        width: 100%;
+        background-color: $selectBackgroundColor;
+        color: white;
+        border-radius: 50px;
+        option {
+          color: white;
+        }
+      }
+    } // END COUNTRY GROUP
+    #city-group {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-radius: 20px;
+      background-color: $selectBackgroundColor;
+      margin: 20px;
+      p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+      }
+      #cities-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        button {
+          background-color: $buttonBAckgroundColor;
+          border-radius: 20px;
+          color: white;
+          width: 100%;
+          height: 50px;
+          margin: 10px;
+          font-size: 30px;
+          display: table-cell;
+          vertical-align: middle;
+          &:focus {
+            background-color: burlywood;
+          }
+        }
+      } // END CITIES DIV
+      #visited-button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        button {
+          background-color: $buttonBAckgroundColor;
+          color: white;
+          width: 100%;
+          height: 50px;
+          margin: 10px;
+          border-radius: 20px;
+        }
+      } // END VISITED BUTTON
+      #city-facts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        margin-top: 10px;
+        margin-left: 10px;
+      } // END CITY FACTS
+    } // END CITY GROUP
+  } // END CONTAINER
+  #visited-cities {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+    background-color: $selectBackgroundColor;
+    button {
+      background-color: $buttonBAckgroundColor;
+      color: white;
+    }
+    span {
+      font-size: 20px;
+    }
+  } //END VISITED CITIES
+  #city-saved {
+    @keyframes fadeout {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    .fade-out {
+      opacity: 0;
+      animation: fadeout 1s linear;
+      color: white;
+      font-size: 50px !important;
+    }
+  }
+} //-------END BODY-----
