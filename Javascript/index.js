@@ -61,7 +61,7 @@ showCity = (cityData) => {
             visitedCities();
         }
 
-        //STILL ON EVENTLISTENER CALL THESE FUNCTIONS AFTER THE FIRST IF STATEMENT
+        //STILL ON EVENTLISTENER CALL THESE FUNCTIONS AFTER THE IF STATEMENT INSIDE THE CITIES LOOP
         createVisitedButton();
         visitedButtonToDo();
         showCityFacts();
